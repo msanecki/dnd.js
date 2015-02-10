@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+<script src="dnd.min.js"></script>
+<script>
+
+
+dnd.on('#drag1', {
+    'over': function (element) {
+        alert('over');
+    },
+    'drop': function (files, element) {
+         alert('droped');
+    }
+});
+
+</script>
+</head>
+<body>
+
+<p>Drag&Drope dnd.js:</p>
+
+<div id="div1" ></div>
+<br>
+<img id="drag1" src="img_logo.gif" width="336" height="69">
+
+</body>
+</html>
